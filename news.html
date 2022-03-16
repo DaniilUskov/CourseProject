@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Bootstrap Starter Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  </head>
+<body class="d-flex flex-column h-100">
+  <header>
+    <div class="container-fluid header-div">
+      <nav class="navbar navbar-expand-lg navbarHead">
+        <a class="navbar-brand navbar-headname" href="#">
+          НашлиКино
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ui class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-one">
+              <a class="navbar-item navbar-itemname" href="#">
+                Популярное
+              </a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle navbar-itemname-dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Жанры
+              </a>
+              <div class="dropdown-menu dropdown-zhanres" aria-labelledby="navbarDropdown">
+                <div class="row">
+                  <div class="col-4 dropdown-div">
+                    <a class="dropdown-item" href="#">Комедия</a>
+                    <a class="dropdown-item" href="#">Семейные</a>
+                    <a class="dropdown-item" href="#">Фантастика</a>
+                    <a class="dropdown-item" href="#">Исторические</a>
+                  </div>
+                  <div class="col-4 dropdown-div">
+                    <a class="dropdown-item" href="#">Драма</a>
+                    <a class="dropdown-item" href="#">Мелодрама</a>
+                    <a class="dropdown-item" href="#">Криминальные</a>
+                    <a class="dropdown-item" href="#">Мультфильмы</a>
+                  </div>
+                  <div class="col-4">
+                    <a class="dropdown-item" href="#">Триллер</a>
+                    <a class="dropdown-item" href="#">Ужасы</a>
+                    <a class="dropdown-item" href="#">Документальные</a>
+                    <a class="dropdown-item" href="#">Мюзиклы</a>
+                  </div>
+                </div>
+                <!-- <div class="dropdown-divider"></div> -->
+              </div>
+            </li>
+            <li class="nav-item nav-item-one">
+              <a class="navbar-item navbar-itemname" href="#">
+                Скоро выйдет
+              </a>
+            </li>
+          </ui>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit">Найти</button>
+          </form>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+            <img src="/images/account.png" class="account-image">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-shrink-0"> 
+    <div class="row mb-2 news-container">
+      <div class="col-9 mainnews mt-3">
+        <div class="row">
+          <div class="col-4">
+            <a href="#" class="newsdiv">
+              <div class="img-div">
+                <img src="/images/Father.jpg" class="news-img">
+              </div>
+              <div class="p-div">
+                <p class="text-center">
+                  «Крестному отцу» — 50 лет. Мамонт в истории кино, оказавшийся мессией...
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#" class="newsdiv">
+              <div class="img-div">
+                <img src="/images/liamNisson.jpg" class="news-img">
+              </div>
+              <div class="p-div">
+                <p class="text-center ">
+                  «Стивен Сигал, избавься от хвостика и похудей малек!»: Лиам Нисон — о конкурентах и любви к дракам...
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 mb-3">
+            <a href="#" class="newsdiv">
+              <div class="img-div">
+                <img src="/images/Ephoria.jpg" class="news-img">
+              </div>
+              <div class="p-div">
+                <p class="text-center">
+                  Что не так с американскими зумерами в «Эйфории»?...
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#" class="newsdiv">
+              <div class="img-div">
+                <img src="/images/Father.jpg" class="news-img">
+              </div>
+              <div class="p-div">
+                <p class="text-center">
+                  «Крестному отцу» — 50 лет. Мамонт в истории кино, оказавшийся мессией...
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#" class="newsdiv">
+              <div class="img-div">
+                <img src="/images/liamNisson.jpg" class="news-img">
+              </div>
+              <div class="p-div">
+                <p class="text-center ">
+                  «Стивен Сигал, избавься от хвостика и похудей малек!»: Лиам Нисон — о конкурентах и любви к дракам...
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#" class="newsdiv">
+              <div class="img-div">
+                <img src="/images/Ephoria.jpg" class="news-img">
+              </div>
+              <div class="p-div">
+                <p class="text-center">
+                  Что не так с американскими зумерами в «Эйфории»?...
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mt-3 sidenews">
+        <div>
+          <a href="#" class="sidenews-link">
+            Победители Critics Choice Awards 2022
+          </a>
+          <p class="p-1 sidenews">
+            Сегодня, 14:00
+          </p>
+        </div>
+        <div class="dropdown-divider"></div> 
+        <div>
+          <a href="#" class="sidenews-link">
+            Победители Critics Choice Awards 2022
+          </a>
+          <p class="p-1 sidenews">
+            Сегодня, 14:00
+          </p>
+        </div>
+        <div class="dropdown-divider"></div> 
+        <div>
+          <a href="#" class="sidenews-link">
+            Победители Critics Choice Awards 2022
+          </a>
+          <p class="p-1 sidenews">
+            Сегодня, 14:00
+          </p>
+        </div>
+        <div class="dropdown-divider"></div> 
+        <div>
+          <a href="#" class="sidenews-link">
+            Победители Critics Choice Awards 2022
+          </a>
+          <p class="p-1 sidenews">
+            Сегодня, 14:00
+          </p>
+        </div>
+        <div class="dropdown-divider"></div> 
+        <div>
+          <a href="#" class="sidenews-link">
+            Победители Critics Choice Awards 2022
+          </a>
+          <p class="p-1 sidenews">
+            Сегодня, 14:00
+          </p>
+        </div>
+        <div class="dropdown-divider"></div> 
+        <div>
+          <a href="#" class="sidenews-link">
+            Победители Critics Choice Awards 2022
+          </a>
+          <p class="p-1 sidenews">
+            Сегодня, 14:00
+          </p>
+        </div>
+        <div class="dropdown-divider"></div> 
+        <div>
+          <a href="#" class="sidenews-link">
+            Победители Critics Choice Awards 2022
+          </a>
+          <p class="p-1 sidenews">
+            Сегодня, 14:00
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer mt-auto py-3 footer-for-site text-center">
+    <div class="container">
+      <p class="mb-0 pb-0 pt-2">
+        Работу выполнил студент <br>
+        Группы НМТ-393907 <br>
+        Усков Даниил
+      </p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

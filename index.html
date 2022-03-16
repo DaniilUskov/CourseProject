@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Bootstrap Starter Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <div class="container-fluid header-div">
+      <nav class="navbar navbar-expand-lg navbarHead">
+        <a class="navbar-brand navbar-headname" href="#">
+          НашлиКино
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ui class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-one">
+              <a class="navbar-item navbar-itemname" href="#">
+                Популярное
+              </a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle navbar-itemname-dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Жанры
+              </a>
+              <div class="dropdown-menu dropdown-zhanres" aria-labelledby="navbarDropdown">
+                <div class="row">
+                  <div class="col-4 dropdown-div">
+                    <a class="dropdown-item" href="#">Комедия</a>
+                    <a class="dropdown-item" href="#">Семейные</a>
+                    <a class="dropdown-item" href="#">Фантастика</a>
+                    <a class="dropdown-item" href="#">Исторические</a>
+                  </div>
+                  <div class="col-4 dropdown-div">
+                    <a class="dropdown-item" href="#">Драма</a>
+                    <a class="dropdown-item" href="#">Мелодрама</a>
+                    <a class="dropdown-item" href="#">Криминальные</a>
+                    <a class="dropdown-item" href="#">Мультфильмы</a>
+                  </div>
+                  <div class="col-4">
+                    <a class="dropdown-item" href="#">Триллер</a>
+                    <a class="dropdown-item" href="#">Ужасы</a>
+                    <a class="dropdown-item" href="#">Документальные</a>
+                    <a class="dropdown-item" href="#">Мюзиклы</a>
+                  </div>
+                </div>
+                <!-- <div class="dropdown-divider"></div> -->
+              </div>
+            </li>
+            <li class="nav-item nav-item-one">
+              <a class="navbar-item navbar-itemname" href="#">
+                Скоро выйдет
+              </a>
+            </li>
+          </ui>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit">Найти</button>
+          </form>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+            <img src="/images/account.png" class="account-image">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container upper-content-container">
+    <div class="jumbotron main-premiere position-relative overflow-hidden">
+      <div class="row">
+        <div class="col-xxl-6 col-xl-5 col-lg-12 film-discr  d-flex justify-content-center">
+          <div class="container film-discr-container">
+            <h1 class="mt-md-5">Самый ожидаемый сериал</h1>
+            <p class="film-discr">
+              <span style="font-weight:bold">Властелин колец - Кольца власти - </span>запланированный телесериал по мотивам 
+              произведений Джона Рональда Руэла Толкина о Средиземье. 
+              Действие сериала будет происходить во Вторую эпоху легендариума Дж. Р. Р. 
+              Толкина и охватит все главные события этого периода: выковку Колец власти, 
+              восхождение Саурона, эпическую историю Нуменора, последний альянс эльфов и людей.
+            </p>
+            <p class="text-right"><a href="#" class="link-more">Подробнее...</a></p>
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-7 col-lg-12  d-flex justify-content-center">
+          <!-- <iframe width="720" height="480" src="/videos/The Lord of the Rings_ The Rings of Power – Teaser Trailer _ Prime Video.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <video  controls class="video-frame">
+            <source src="/videos/The Lord of the Rings_ The Rings of Power – Teaser Trailer _ Prime Video.mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="container container-best-films">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <div id="first-discr"  class="row overflow-hidden best-selling mr-sm-2 position-relative  d-flex justify-content-center">
+            <div class="col-lg-6 col-md-12 film-discr-container">
+              <h2 class="text-center mt-3">Самый кассовый фильм</h2>
+              <div id="discr"></div>
+              <p class="text-right"><a href="#" class="link-more">Подробнее...</a></p>
+            </div>
+            <div class="col-lg-6 col-md-12 best-selling-image">
+              <img src="/images/Spider-Man No Way Home.jpg" class="img-best">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div id="second-discr" class="row overflow-hidden best-selling ml-sm-2 position-relative d-flex justify-content-center">
+            <div   class="col-lg-6 col-md-12 film-discr-container">
+              <h2 class="text-center mt-3">Самый популярный фильм</h2>
+              <div id="discrUncharted"></div>
+              <p class="text-right"><a href="#" class="link-more">Подробнее...</a></p>
+            </div>
+            <div  class="col-lg-6 col-md-hidden best-selling-image">
+              <img src="/images/Uncharted.jpg" class="img-best">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row mb-2 g-5 main-container">
+        <div id="mainbar" class="col-sm-8 mainbar text-center">
+          <div>
+            <h3>Главное сегодня</h3>
+            <img src="/images/Father.jpg" class="img-center"><br>
+            <a href="#" class="mainbar-link">
+              «Крестному отцу» — 50 лет. Мамонт в истории кино, оказавшийся мессией...
+            </a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div>
+            <img src="/images/Ephoria.jpg" class="img-center"><br>
+            <a href="#" class="mainbar-link">
+              Что не так с американскими зумерами в «Эйфории»?...
+            </a>
+          </div> 
+          <div class="dropdown-divider"></div>  
+          <div>
+            <img src="/images/liamNisson.jpg" class="img-center"><br>
+            <a href="#" class="mainbar-link">
+              «Стивен Сигал, избавься от хвостика и похудей малек!»: Лиам Нисон — о конкурентах и любви к дракам...
+            </a>
+          </div>  
+          <div class="dropdown-divider"></div>  
+          <div>
+            <img src="/images/Paradox.jpg" class="img-center"><br>
+            <a href="#" class="mainbar-link">
+              Парадокс Миранды: как автор «Гамильтона» и «Энканто» достиг популярности, перестав быть популярным...
+            </a>
+          </div> 
+          <div class="dropdown-divider"></div>  
+          <div>
+            <img src="/images/bridzherton.jpg" class="img-center"><br>
+            <a href="#" class="mainbar-link">
+              Сериалы марта: «Halo», «Лунный рыцарь» и возвращение «Бриджертонов»...
+            </a>
+          </div> 
+
+          <div class="text-center p-4 ">
+            <button class="btn">
+              Больше материалов
+            </button>
+          </div>
+        </div>
+        <div id="sidebar" class="col-sm-4 pr-0 d-none d-sm-block">
+          <div class="position-sticky" style="top:1rem">
+            <div class="right-sidebar-top text-center overflow-hidden">
+              <h4 class="p-2">
+                Сейчас в кино
+              </h4>
+              <img src="/images/Sirano.jpg" class="img-sidebar"><br>
+              <a href="#" class="mainbar-link">
+                Сирано
+              </a>
+            </div>
+            <div class="right-sidebar text-center overflow-hidden pt-4">
+              <img src="/images/Uncharted.jpg" class="img-sidebar"><br>
+              <a href="#" class="mainbar-link">
+                Анчартед: На картах не значится
+              </a>
+            </div>
+            <div class="right-sidebar-bottom text-center overflow-hidden pt-4">
+              <img src="/images/MoonLightFall.jpg" class="img-sidebar"><br>
+              <a href="#" class="mainbar-link">
+                Падение Луны
+              </a>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+   
+  </div>
+  
+  
+  
+
+
+  <footer class="mt-auto py-3 footer-for-site text-center">
+    <p class="mb-0 pb-0 pt-2">
+      Работу выполнил студент <br>
+      Группы НМТ-393907 <br>
+      Усков Даниил
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
