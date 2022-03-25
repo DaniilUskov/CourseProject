@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Bootstrap Starter Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <div class="container-fluid header-div">
+      <nav class="navbar navbar-expand-lg navbarHead">
+        <a class="navbar-brand navbar-headname" href="#">
+          НашлиКино
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ui class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-one">
+              <a class="navbar-item navbar-itemname" href="#">
+                Популярное
+              </a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle navbar-itemname-dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Жанры
+              </a>
+              <div class="dropdown-menu dropdown-zhanres" aria-labelledby="navbarDropdown">
+                <div class="row">
+                  <div class="col-4 dropdown-div">
+                    <a class="dropdown-item" href="#">Комедия</a>
+                    <a class="dropdown-item" href="#">Семейные</a>
+                    <a class="dropdown-item" href="#">Фантастика</a>
+                    <a class="dropdown-item" href="#">Исторические</a>
+                  </div>
+                  <div class="col-4 dropdown-div">
+                    <a class="dropdown-item" href="#">Драма</a>
+                    <a class="dropdown-item" href="#">Мелодрама</a>
+                    <a class="dropdown-item" href="#">Криминальные</a>
+                    <a class="dropdown-item" href="#">Мультфильмы</a>
+                  </div>
+                  <div class="col-4">
+                    <a class="dropdown-item" href="#">Триллер</a>
+                    <a class="dropdown-item" href="#">Ужасы</a>
+                    <a class="dropdown-item" href="#">Документальные</a>
+                    <a class="dropdown-item" href="#">Мюзиклы</a>
+                  </div>
+                </div>
+                <!-- <div class="dropdown-divider"></div> -->
+              </div>
+            </li>
+            <li class="nav-item nav-item-one">
+              <a class="navbar-item navbar-itemname" href="#">
+                Скоро выйдет
+              </a>
+            </li>
+          </ui>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit">Найти</button>
+          </form>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+            <img src="/images/account.png" class="account-image">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container container-best-films">
+    <div>
+      <h3 class="text-center">Лучшие фильмы</h3>
+      <div class="row mb-2 best-selling-container">
+        <div class="col-7">
+          <div class="img-div-best">
+            <img src="/images/GreenMile.jpg" class="news-img" >
+          </div>
+        </div>
+        <div class="col-5 best-discr-col">
+          <div class="p-2">
+            <p class="text-center pt-3 film-discr-bestfilms">
+              Зеленая миля <br>
+              The green mile, 1999
+            </p>
+            <p class="text-left film-discr-bestfilms-eng">
+              США, драма
+            </p>
+            <p class="mt-4 film-rating">
+              Рейтинг критиков: ...<br>
+              Рейтинг кинопоиска: ...
+            </p>
+          </div>
+          <div class="row pb-1 d-flex align-items-end">
+            <div class="col">
+              <a class="best-film-button-more" href="#">
+                ...
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="best-film-button-more d-flex justify-content-end">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+                  <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row mb-2 best-selling-container">
+        <div class="col-7">
+          <div class="img-div-best">
+            <img src="/images/GreenMile.jpg" class="news-img" >
+          </div>
+        </div>
+        <div class="col-5 best-discr-col">
+          <div class="p-2">
+            <p class="text-center pt-3 film-discr-bestfilms">
+              Зеленая миля <br>
+              The green mile, 1999
+            </p>
+            <p class="text-left film-discr-bestfilms-eng">
+              США, драма
+            </p>
+            <p class="mt-4 film-rating">
+              Рейтинг критиков: ...<br>
+              Рейтинг кинопоиска: ...
+            </p>
+          </div>
+          <div class="row pb-1 d-flex align-items-end">
+            <div class="col">
+              <a class="best-film-button-more" href="#">
+                ...
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="best-film-button-more d-flex justify-content-end">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+                  <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row mb-2 best-selling-container">
+        <div class="col-7">
+          <div class="img-div-best">
+            <img src="/images/GreenMile.jpg" class="news-img" >
+          </div>
+        </div>
+        <div class="col-5 best-discr-col">
+          <div class="p-2">
+            <p class="text-center pt-3 film-discr-bestfilms">
+              Зеленая миля <br>
+              The green mile, 1999
+            </p>
+            <p class="text-left film-discr-bestfilms-eng">
+              США, драма
+            </p>
+            <p class="mt-4 film-rating">
+              Рейтинг критиков: ...<br>
+              Рейтинг кинопоиска: ...
+            </p>
+          </div>
+          <div class="row pb-1 d-flex align-items-end">
+            <div class="col">
+              <a class="best-film-button-more" href="#">
+                ...
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="best-film-button-more d-flex justify-content-end">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+                  <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+
+
+  <footer class="mt-auto py-3 footer-for-site text-center">
+    <p class="mb-0 pb-0 pt-2">
+      Работу выполнил студент <br>
+      Группы НМТ-393907 <br>
+      Усков Даниил
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
